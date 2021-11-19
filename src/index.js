@@ -8,7 +8,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Routes>
-        <Route path='/' exact component={() => <Download />} />
+        <Route path='/download' exact component={() => <Download />} />
       </Routes>
     </Router>
   </React.StrictMode>,
