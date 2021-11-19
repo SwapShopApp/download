@@ -9,7 +9,7 @@ function App() {
   useEffect(() => {
     if (isAndroid) {
       window.location.href =
-        "https://play.google.com/store/apps/details?;
+        "https://play.google.com/store/apps/details?";
     }else if(isIOS) {
       window.location.href =
         "https://apps.apple.com/gb/app/swapshop-barter-marketplace/id1586341653";

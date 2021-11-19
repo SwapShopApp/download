@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Download from './download';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <Switch>
-        <Route path='/' exact component{() => <Download />} />
-      </Switch>
+      <Routes>
+        <Route path='/' exact component={() => <Download />} />
+      </Routes>
     </Router>
   </React.StrictMode>,
   document.getElementById('root')
