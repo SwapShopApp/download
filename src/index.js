@@ -1,12 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import Download from './download';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <Switch>
+        <Route path='/' exact component{() => <Download />} />
+      </Switch>
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
