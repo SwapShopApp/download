@@ -4,7 +4,7 @@ import {
   isIOS
 } from "react-device-detect";
 
-function App() {
+function Download() {
 
   useEffect(() => {
     if (isAndroid) {
@@ -20,9 +20,9 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div className="Download">
     </div>
   );
 }
 
-export default App;
+export default Download;
